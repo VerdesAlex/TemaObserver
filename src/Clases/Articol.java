@@ -63,7 +63,7 @@ public abstract class Articol implements Subject {
     public void notifyObservers(Object arg) {
         for (Observer o : this.observers) {
             if(this.document == o.GetTipDocument()) {
-                o.Notify(this, arg);
+                o.Notify(this, arg); //test
             }
         }
     }
